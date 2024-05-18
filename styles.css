@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+header.scrolled {
+    background: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home {
+    height: 100vh;
+    background: url('flat-lay-essentials-bead-working.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+#home h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+}
+
+#about, #services, #contact {
+    min-height: 100vh;
+    background: #f4f4f4;
+    color: #333;
+    padding-top: 150px; /* Extra padding for fixed header */
+}
+
+#about {
+    background: linear-gradient(to bottom, #ffc08d, #f1b5a6);
+}
+
+#services {
+    background: linear-gradient(to bottom, #ffc08d, #f1b5a6);
+
+}
+
+#contact {
+    background: linear-gradient(to bottom, #ffc08d, #f1b5a6);
+
+}
